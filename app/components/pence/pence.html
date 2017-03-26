@@ -1,0 +1,61 @@
+
+<div class="pence">
+
+    <div class="inputs">
+        <div class="price">
+            <input type="number" ng-model="vm.price" placeholder="Price">
+        </div>
+        <div class="payment">
+            <input type="number" ng-model="vm.payment" placeholder="Payment">
+        </div>
+        <div class="insufficientCoins" ng-if="vm.insufficientCoins">
+            Insuficient coins
+        </div>
+        <div class="insufficientCoins" ng-if="vm.needMoreMoney">
+            Not enought money inserted
+        </div>
+    </div>
+
+    <div class="buttonsAndResults">
+        <div class="buttons">
+            <div class="buttonAndText">
+                <div class="beforeButton">
+                    Infinite Coins
+                </div>
+                <button ng-click="vm.calculateChange()">Get Change</button>
+            </div>
+            <div class="buttonAndText">
+                <div class="beforeButton">
+                    Limited Coins
+                </div>
+                <button ng-click="vm.calculateLimitedChange()">Get Limited Change</button>
+            </div>
+        </div>
+
+        <div class="results">
+            <div class="changeResult" ng-if="vm.changeReturned > 0">
+                {{vm.changeReturned}} pence
+            </div>
+            <div class="coinsContainer" ng-if="!vm.insufficientCoins">
+                <div class="coins" ng-repeat="coin in vm.usedCoins" ng-if="coin.coinType">
+                    <div>Coin value: {{coin.coinType.value}}</div>
+                    <div>Coins returned: {{coin.coinNumber}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="amountOfCoins">
+        Available coins:
+        <div ng-repeat="coin in vm.coins">
+            <div class="coin">
+                <div class="coinName">
+                    Coin Type: {{coin.name}}
+                </div>
+                <div class="coinAmount">
+                    Amount: {{coin.amount}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

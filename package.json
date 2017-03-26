@@ -1,0 +1,22 @@
+{
+  "name": "kcom_test",
+  "version": "1.0.0",
+  "description": "Kcom test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Victor Oancea",
+  "license": "ISC",
+  "devDependencies": {
+    "angular-mocks": "^1.6.3",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0"
+  },
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-ui-router": "^0.4.2"
+  }
+}

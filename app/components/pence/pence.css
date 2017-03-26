@@ -1,0 +1,82 @@
+.pence {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+}
+.inputs input {
+    height: 24px;
+    width: 130px;
+    margin-right: 16px;
+    border-radius: 5px;
+}
+.insufficientCoins {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.buttonsAndResults {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+}
+.buttons button {
+    height: 40px;
+    width: 134px;
+    margin: 8px 24px 8px 0;
+}
+.buttons .buttonAndText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.buttons .buttonAndText .beforeButton {
+    width: 150px;
+}
+
+.results {
+    margin-top: 15px;
+}
+
+.results .changeResult {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.results .coinsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.results .coinsContainer .coins {
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+}
+
+.results .coinsContainer .coins div {
+    margin-right: 8px;
+}
+
+.amountOfCoins {
+    margin-top: 16px;
+}
+
+.amountOfCoins .coin {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+}
+.amountOfCoins .coin .coinName {
+    margin-right: 16px;
+}
